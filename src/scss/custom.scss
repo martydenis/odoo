@@ -1,6 +1,6 @@
 .section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
 }
 
 .lead {
@@ -14,4 +14,29 @@
 
 #header_menu {
   border-bottom: 1px solid lighten($blue, 15%);
+}
+
+#credit-card small {
+  font-size: 0.75em;
+}
+
+.btn-outline-light {
+  color: $dark;
+}
+
+a {
+  text-underline-offset: 0.4rem;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 5rem !important;
+}
+.rounded-top-right {
+  border-top-right-radius: 5rem !important;
+}
+.rounded-bottom-left {
+  border-bottom-left-radius: 5rem !important;
+}
+.rounded-bottom-right {
+  border-bottom-right-radius: 5rem !important;
 }
