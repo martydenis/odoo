@@ -1,0 +1,17 @@
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.lead {
+  // opacity: 0.85;
+  margin-top: 1.33rem;
+}
+
+#header {
+ min-height: 90vh;
+}
+
+#header_menu {
+  border-bottom: 1px solid lighten($blue, 15%);
+}

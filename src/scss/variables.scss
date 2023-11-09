@@ -1,0 +1,57 @@
+// Grid
+
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 5),
+  7: ($spacer * 7.5),
+  8: ($spacer * 10),
+  9: ($spacer * 15),
+  10: ($spacer * 20),
+);
+
+
+// Colors
+$theme-colors: (
+  'white': #fff
+);
+
+$gray-100: #fafbff;
+$gray-700: #212e3f;
+$gray-800: #161348;
+
+$primary: #038aff;
+$warning: #febd3d;
+$dark: #161348;
+$light: #fafbff;
+$success: #5ccaa7;
+
+// Navbar
+$navbar-nav-link-padding-x: 1.4rem;
+$navbar-padding-y: 1.5rem;
+
+// Typography
+$font-family-sans-serif: 'Manrope', sans-serif;
+$line-height-base: 1.8;
+
+$h1-font-size: 3rem;
+$headings-font-weight: 700;
+$headings-line-height: 1.4;
+
+$lead-font-size: 1.15rem;
+$lead-font-weight: 400;
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+
+
+// Components
+$border-radius:               .3rem;
+$border-radius-lg:            .5rem;
+$border-radius-sm:            .25rem;
+
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1.5rem;
+
+$input-btn-padding-x-lg: 2.5rem;
+$input-btn-padding-y-lg: 1.25rem;
+$input-btn-font-size-lg: 1rem;
