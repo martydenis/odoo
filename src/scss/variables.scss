@@ -18,18 +18,19 @@ $theme-colors: (
 $yiq-contrasted-threshold: 200;
 
 $gray-100: #fafbff;
-$gray-200: #e1e9f0;
+$gray-200: #dfe9f1;
+$gray-300: #cbd4de;
 $gray-600: #61718b;
 $gray-800: #212e3f;
-$gray-900: #161348;
+$gray-900: #1a0b48;
 
 $text-muted: $gray-600;
 
-$primary: #038aff;
-$warning: #febd3d;
+$primary: #008bff;
+$warning: #ffbe29;
 $dark: $gray-900;
 $light: $gray-200;
-$success: #5ccaa7;
+$success: #00cba7;
 
 // Navbar
 $navbar-nav-link-padding-x: 1rem;
@@ -42,10 +43,10 @@ $line-height-base: 1.8;
 
 $h1-font-size: 2.85rem;
 $headings-font-weight: 700;
-$headings-line-height: 1.4;
-
-$lead-font-size: 1.1rem;
-$lead-font-weight:   400;
+$headings-line-height: 1.45;
+ 
+$lead-font-size: 1.05rem;
+$lead-font-weight:   500;
 $font-weight-light:  400;
 $font-weight-normal: 500;
 $font-weight-bold:   700;
@@ -54,7 +55,7 @@ $font-weight-bold:   700;
 
 // Links
 $link-color: $primary;
-$link-decoration: underline dashed 0.075rem;
+$link-decoration: underline dotted 2px;
 $link-hover-decoration: none;
 
 
@@ -66,17 +67,21 @@ $border-radius-sm: 0.35rem;
 $input-btn-font-size: 0.9rem;
 $input-btn-line-height: 1.5;
 $input-btn-border-width: 2px;
-$input-btn-padding-x:    1.5rem;
-$input-btn-padding-y:    0.4rem;
+$input-btn-padding-x:    1.3rem;
+$input-btn-padding-y:    0.5rem;
 
 $input-btn-font-size-sm: 0.8rem;
 $input-btn-padding-x-sm: 1rem;
 $input-btn-padding-y-sm: 0.3rem;
 
 // $input-btn-font-size-lg: ;
-$input-btn-padding-x-lg: 2.5rem;
+$input-btn-padding-x-lg: 2rem;
 $input-btn-padding-y-lg: 1rem;
 $input-btn-font-size-lg: 1rem;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($dark, .10);
+$box-shadow:    0 .5rem 1rem rgba($dark, .10);
+$box-shadow-lg: 0 1rem 3rem rgba($dark, .08);
 
 // Cards
 $card-border-radius: 0.75rem;
@@ -89,6 +94,13 @@ $list-group-item-padding-x: 0;
 $list-group-border-color: rgba($dark, 0.10);
 
 // Badges
-$badge-padding-y: 0.75em !default;
-$badge-padding-x: 1em !default;
+$badge-padding-y: 0.75em;
+$badge-padding-x: 1em;
 $badge-border-radius: $border-radius-sm;
+$badge-pill-padding-x: 1em;
+
+// Progress bars
+$progress-height:                   3px;
+$progress-bg:                       $gray-300;
+$progress-box-shadow:               none;
+$progress-bar-bg:                   $warning;

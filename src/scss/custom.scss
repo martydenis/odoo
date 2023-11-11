@@ -1,10 +1,20 @@
-.section {
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
+.section-skewed {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom : 3vw solid $body-bg;
+    border-left : 100vw solid transparent;
+  }
 }
 
 .lead {
-  // opacity: 0.85;
   margin-top: 1.33rem;
 }
 
@@ -20,6 +30,12 @@
   font-size: 0.75em;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.75em;
+}
+
 .btn-outline-light {
   color: $dark;
 }
@@ -28,15 +44,31 @@ a {
   text-underline-offset: 0.4rem;
 }
 
-.rounded-top-left {
-  border-top-left-radius: 5rem !important;
+img {
+  height: auto;
 }
-.rounded-top-right {
-  border-top-right-radius: 5rem !important;
+
+svg {
+  width: 1.125em;
+  height: 1.125em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  .svg-fill {
+    fill: currentColor;
+    stroke-width: 0;
+  }
 }
-.rounded-bottom-left {
-  border-bottom-left-radius: 5rem !important;
+
+.card {
+  box-shadow: $box-shadow-lg;
 }
-.rounded-bottom-right {
-  border-bottom-right-radius: 5rem !important;
+
+.awesome-project__card-img {
+  top: -5rem;
+  right: -7.5rem;
+  width: 350px;
 }
