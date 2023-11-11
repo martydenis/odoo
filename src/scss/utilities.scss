@@ -4,6 +4,10 @@
     // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
     @each $size, $length in $spacers {
       @if "#{$size}" != "0" {
+        .gap#{$infix}-#{$size} {
+          gap: $length !important;
+        }
+
         .gap-x#{$infix}-#{$size} {
           column-gap: $length !important;
         }
@@ -27,4 +31,16 @@
 }
 .rounded-bottom-right {
   border-bottom-right-radius: 5rem !important;
+}
+
+.text-sm {
+  font-size: $font-size-sm !important;
+}
+
+.text-lg {
+  font-size: $font-size-lg !important;
+}
+
+.text-decoration-dotted {
+  text-decoration-style: dotted !important;
 }
