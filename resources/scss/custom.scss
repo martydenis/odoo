@@ -100,10 +100,14 @@ svg {
   box-shadow: $box-shadow;
 }
 
+.card-hover:hover {
+  box-shadow: $box-shadow-lg;
+}
+
 .awesome-project__card-img {
   top: -4.5rem;
   right: -7.5rem;
-  width: 350px;
+  left: 14.5325rem;
 }
 
 .btn-store {
@@ -157,6 +161,31 @@ footer a {
   }
 }
 
+#awards .card {
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6rem;
+    background: rgba(#fff, 0.75);
+    width: 120%;
+    transform: translate3d(0, 100%, 0) rotate(30deg);
+    transform-origin: top left;
+    pointer-events: none;
+    opacity: 1;
+  }
+}
+
 #awards .card:hover {
-  box-shadow: $box-shadow-lg;
+  // border-color: $gray-200;
+
+  &:after {
+    opacity: 0.5;
+    transform: translate3d(0, -450%, 0) rotate(30deg);
+    transition: .7s ease-out;
+    transition-property: transform, opacity;
+  }
 }

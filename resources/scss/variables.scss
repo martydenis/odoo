@@ -41,9 +41,9 @@ $success: #00cba7;
 $navbar-nav-link-padding-x: 1rem;
 $navbar-padding-y: 1.1rem;
 
-$navbar-dark-color:         #ffffff;
-$navbar-dark-hover-color:   rgba(#ffffff, .75);
-$navbar-dark-active-color:  #ffffff;
+$navbar-dark-color:         rgba(#ffffff, .75);
+$navbar-dark-hover-color:   #fff;
+$navbar-dark-active-color:  $navbar-dark-hover-color;
 
 
 // Typography
@@ -61,7 +61,7 @@ $font-weight-normal: 500;
 $font-weight-bold:   700;
 
 // Links
-$link-color: $primary;
+$link-color: $dark;
 $link-decoration: underline solid 3px;
 $link-hover-decoration: none;
 
@@ -88,7 +88,7 @@ $input-btn-font-size-lg: 1rem;
 
 $box-shadow-sm: 0 .125rem .25rem rgba($dark, .08);
 $box-shadow:    0 .5rem 1.5rem rgba($dark, .08);
-$box-shadow-lg: 0 1rem 3rem rgba($dark, .08);
+$box-shadow-lg: 0 1.25rem 2.5rem rgba($dark, .12);
 
 // Cards
 $card-border-radius: 0.75rem;
