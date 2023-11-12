@@ -47,16 +47,13 @@ main section {
   }
 }
 
-.lead {
-  margin-top: 1.33rem;
-}
-
-#header {
- min-height: 90vh;
-}
-
 #header_menu {
   border-bottom: 1px solid lighten($blue, 15%);
+}
+
+#credit-card {
+  background: url('../img/creditcard-bg.svg') no-repeat center center;
+  background-size: cover;
 }
 
 #credit-card small {
@@ -71,10 +68,12 @@ main section {
 
 .btn-outline-light {
   color: $dark;
+  border-color: $gray-200;
 }
 
 a {
   text-underline-offset: 0.5rem;
+  transition: color $animation-props;
 }
 
 img {
@@ -97,11 +96,12 @@ svg {
 }
 
 .card {
-  box-shadow: $box-shadow-lg;
+  transition: box-shadow $animation-props;
+  box-shadow: $box-shadow;
 }
 
 .awesome-project__card-img {
-  top: -5rem;
+  top: -4.5rem;
   right: -7.5rem;
   width: 350px;
 }
@@ -122,7 +122,41 @@ svg {
 }
 
 hr {
-  @include gradient-x-three-colors(transparent, rgba($gray-500, 0.35), 50%, transparent);
+  @include gradient-x-three-colors(transparent, rgba($gray-600, 0.25), 50%, transparent);
   border: none;
   height: 1px;
+}
+
+[data-toggle="collapse"] {
+  cursor: pointer;
+}
+
+.faq-question {
+  transition: color $animation-props;
+}
+
+.faq-question:not(.collapsed) .faq-plus {
+  display: none;
+}
+
+.faq-question:not(.collapsed) {
+  color: $primary;
+}
+
+.collapsed .faq-minus {
+  display: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+#awards .card:hover {
+  box-shadow: $box-shadow-lg;
 }

@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odoo test - Martin Denis</title>
 
     <!-- Google fonts -->
+    <!--
+      I couldn't find the precise font you used in the mock-up, but this one is pretty close
+     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +18,7 @@
     <header id="header" class="bg-primary section-skewed">
       <nav id="header_menu" class="navbar navbar-dark navbar-expand-lg container">
         <a class="navbar-brand" href="/">
-          <img src="/src/img/odoo-white.svg" width="92" height="" alt="Odoo" class="align-top">
+          <img src="./resources/img/odoo-white.svg" width="92" height="" alt="Odoo" class="align-top">
         </a>
 
         <ul class="navbar-nav mx-auto">
@@ -40,7 +43,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Sign In</a>
           </li>
-          <li class="nav-item ml-2">
+          <li class="nav-item ml-4">
             <a class="btn btn-white" href="#"><svg><use xlink:href="#shopping-bag"/></svg> Buy now</a>
           </li>
         </ul>
@@ -57,10 +60,10 @@
 
             <ul class="list-unstyled m-0 d-flex gap-x-5 align-items-center mt-7">
               <li class="mr-4">Trusted by:</li>
-              <li><a href="#"><img src="/src/img/google-white.svg" width="82" height="28" alt="Google"></a></li>
-              <li><a href="#"><img src="/src/img/spotify-white.svg" width="82" height="28" alt="Spotify"></a></li>
-              <li><a href="#"><img src="/src/img/airbnb-white.svg" width="82" height="28" alt="Airbnb"></a></li>
-              <li><a href="#"><img src="/src/img/paypal-white.svg" width="82" height="28" alt="PayPal"></a></li>
+              <li><a href="#"><img src="./resources/img/google-white.svg" width="82" height="28" alt="Google"></a></li>
+              <li><a href="#"><img src="./resources/img/spotify-white.svg" width="82" height="28" alt="Spotify"></a></li>
+              <li><a href="#"><img src="./resources/img/airbnb-white.svg" width="82" height="28" alt="Airbnb"></a></li>
+              <li><a href="#"><img src="./resources/img/paypal-white.svg" width="82" height="28" alt="PayPal"></a></li>
             </ul>
           </div>
           <div class="col-sm-5">
@@ -71,7 +74,7 @@
 
               <div id="credit-card" class="card card-body bg-dark text-white">
                 <div class="d-flex w-100 justify-content-between align-items-center">
-                  <img src="/src/img/mastercard.svg" alt="Mastercard" width="42">
+                  <img src="./resources/img/mastercard.svg" alt="Mastercard" width="42">
 
                   <span class="badge badge-success">Active</span>
                 </div>
@@ -147,7 +150,7 @@
           </div>
 
           <div class="awesome-project__card-img card border-0 position-absolute t-0">
-            <img src="/src/img/img_01.jpg" alt="Team meeting in blue sofa" class="card-img" width="1000" height="800">
+            <img src="./resources/img/img_01.jpg" alt="Team meeting in blue sofa" class="card-img" width="1000" height="800">
             <div class="card-img-overlay text-right">
               <a href="#" class="btn btn-sm btn-white stretched-link">Play video <svg><use xlink:href="#play"/></svg></a>
             </div>
@@ -156,7 +159,7 @@
         <div class="col-sm-5">
           <span class="badge badge-pill badge-warning mb-5">Tools</span>
           <h2>We build for designers and developers</h2>
-          <p class="lead text-muted">Get components and examples, including tons of variables that will help you grow your business.</p>
+          <p class="lead text-muted mt-5">Get components and examples, including tons of variables that will help you grow your business.</p>
         </div>
       </section>
 
@@ -180,7 +183,7 @@
         </div>
         <div class="col-sm-6">
           <div class="card border-0">
-            <img src="/src/img/img_02.jpg" alt="A lady helping a man on his laptop" class="card-img" width="1000" height="800">
+            <img src="./resources/img/img_02.jpg" alt="A lady helping a man on his laptop" class="card-img" width="1000" height="800">
             <div class="card-img-overlay">
               <a href="#" class="btn btn-sm btn-white stretched-link">Play video <svg><use xlink:href="#play"/></svg></a>
             </div>
@@ -193,7 +196,7 @@
           <div class="row">
             <div class="col">
               <div class="card mb-4 mt-7">
-                <img src="./src/img/person_03.jpg" alt="" class="card-img-top">
+                <img src="./resources/img/person_03.jpg" alt="" class="card-img-top">
                 <div class="card-body p-4">
                   <div class="media align-items-center gap-4">
                     <span class="bd-placeholder-img bg-warning text-white rounded-circle d-flex justify-content-center align-items-center text-sm" style="width: 40px; height: 40px;">JH</span>
@@ -220,7 +223,7 @@
             </div>
             <div class="col pl-0">
               <div class="card card-body align-items-center mb-4">
-                <img src="./src/img/airbnb.svg" alt="Airbnb" width="92">
+                <img src="./resources/img/airbnb.svg" alt="Airbnb" width="92">
 
                 <ul class="list-unstyled d-flex my-5">
                   <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
@@ -234,17 +237,17 @@
                 <p class="card-text text-sm text-muted font-weight-bold">from 23 reviews</p>
               </div>
               <div class="card card-body align-items-center">
-                <img src="./src/img/company_01.png" alt="Company 1" width="64" class="rounded-circle">
+                <img src="./resources/img/company_01.png" alt="Company 1" width="64" class="rounded-circle">
                 <p class="card-title mt-4"><strong>Website UI Kit</strong></p>
                 <ul class="list-unstyled d-flex my-3">
                   <li>
-                    <img src="./src/img/person_01.jpg" alt="Person 1" width="40" height="40" class="img-thumbnail">
+                    <img src="./resources/img/person_01.jpg" alt="Person 1" width="40" height="40" class="img-thumbnail">
                   </li>
                   <li class="ml-n4">
-                    <img src="./src/img/person_02.jpg" alt="Person 2" width="40" height="40" class="img-thumbnail">
+                    <img src="./resources/img/person_02.jpg" alt="Person 2" width="40" height="40" class="img-thumbnail">
                   </li>
                   <li class="ml-n4">
-                    <img src="./src/img/person_03.jpg" alt="Person 3" width="40" height="40" class="img-thumbnail">
+                    <img src="./resources/img/person_03.jpg" alt="Person 3" width="40" height="40" class="img-thumbnail">
                   </li>
                 </ul>
                 <hr class="w-100">
@@ -282,11 +285,11 @@
         <div class="col-sm-5">
           <span class="badge badge-pill badge-warning mb-5">Easy to install</span>
           <h2>Download, install and run</h2>
-          <p class="lead text-muted">Get components and examples, including tons of variables that will help you grow your business.</p>
+          <p class="lead text-muted mt-5">Get components and examples, including tons of variables that will help you grow your business.</p>
 
           <div class="d-flex gap-5 mt-6">
             <a href="#" class="btn btn-store" target="_blank">
-              <img src="./src/img/apple-white.svg" alt="Download on the App Store" width="36">
+              <img src="./resources/img/apple-white.svg" alt="Download on the App Store" width="36">
               <span class="text-left">
                 <small class="d-block text-nowrap">Download on the</small>
                 <span class="h5">App Store</span>
@@ -294,7 +297,7 @@
             </a>
 
             <a href="#" class="btn btn-store" target="_blank">
-              <img src="./src/img/google-play-white.svg" alt="Download on the Play store" width="36">
+              <img src="./resources/img/google-play-white.svg" alt="Download on the Play store" width="36">
               <span class="text-left">
                 <small class="d-block text-nowrap">Download on the</small>
                 <span class="h5">Play Store</span>
@@ -304,7 +307,7 @@
         </div>
         <div class="col-sm-6">
           <div class="card border-0">
-            <img src="/src/img/img_03.jpg" alt="A lady helping a man on his laptop" class="card-img" width="1000" height="800">
+            <img src="/resources/img/img_03.jpg" alt="A lady helping a man on his laptop" class="card-img" width="1000" height="800">
             <div class="card-img-overlay">
               <a href="#" class="btn btn-sm btn-white stretched-link">Play video <svg><use xlink:href="#play"/></svg></a>
             </div>
@@ -317,14 +320,80 @@
           <h4>Infinite solutions</h4>
           <p class="mb-0">Intuitive markup, powerful and lightning-fast build tools,<br>everything you need to turn your ideas into incredible products.</p>
         </div>
-        <a href="#" class="btn btn-white flex-shrink-0">Learn more<svg><use xlink:href="#arrow-right"/></svg></a>
+        <a href="#" class="btn btn-white flex-shrink-0 stretched-link">Learn more<svg><use xlink:href="#arrow-right"/></svg></a>
       </div>
     </main>
 
-    <section class="py-8 bg-light mt-8 section-skewed">
+    <section id="awards" class="pt-8 pb-10 bg-light mt-8 section-skewed">
       <div class="container">
         <span class="badge badge-pill badge-primary mb-5">Awards</span>
         <h5>Awards for design, creativity, and innovation on the Internet</h5>
+
+        <div class="row flex-nowrap mt-8">
+          <div class="col-sm-3">
+            <div class="card card-body align-items-center p-6 mt-8">
+              <a href="#" class="stretched-link">
+                <img src="./resources/img/airbnb.svg" alt="Airbnb" width="130">
+              </a>
+
+              <ul class="list-unstyled d-flex my-5">
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-muted"><svg><use xlink:href="#star" /></svg></li>
+              </ul>
+
+              <h6 class="card-text m-0 font-weight-bold">4.95 out of 5 stars</h6>
+              <p class="card-text text-sm text-muted font-weight-bold">from 23 reviews</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-body align-items-center p-6 text-center">
+              <img src="./resources/img/amazon.svg" alt="Amazon" width="130">
+
+              <p class="my-5 text-sm text-muted font-weight-bold">They build modern-looking websites easily using Tabs.</p>
+
+              <a href="#" class="text-dark stretched-link">Learn more</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-body align-items-center py-6 mt-8">
+              <img src="./resources/img/slack.svg" alt="Slack" width="130">
+
+              <p class="my-5 text-sm text-muted font-weight-bold">They build modern-looking websites easily using Trello.</p>
+
+              <a href="#" class="text-dark stretched-link">Learn more</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-body align-items-center py-6">
+              <a href="#" class="stretched-link">
+                <img src="./resources/img/spotify.svg" alt="Spotify" width="130">
+              </a>
+
+              <ul class="list-unstyled d-flex my-5">
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-warning"><svg><use xlink:href="#star" /></svg></li>
+                <li class="text-muted"><svg><use xlink:href="#star" /></svg></li>
+              </ul>
+
+              <p class="card-text m-0 font-weight-bold">4.95 out of 5 stars</p>
+              <p class="card-text text-sm text-muted font-weight-bold">from 23 reviews</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-body align-items-center py-6 mt-8">
+              <img src="./resources/img/paypal.svg" alt="Paypal" width="130">
+
+              <p class="my-5 text-sm text-muted font-weight-bold">They build modern-looking websites easily using Docker.</p>
+
+              <a href="#" class="text-dark stretched-link">Learn more</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -332,12 +401,93 @@
       <h2>Helpful answers</h2>
       <p class="lead text-muted">Start building fast, beautiful, and modern-looking websites in no time.</p>
 
-      <ul class="list-unstyled mt-6">
-
+      <ul class="list-unstyled mt-6 mb-8 row text-left gap-y-5">
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-1" aria-expanded="false">
+              <svg><use xlink:href="#book"/></svg>
+              <strong class="flex-grow-1">Which license do I need?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-1" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-2" aria-expanded="false">
+              <svg><use xlink:href="#book"/></svg>
+              <strong class="flex-grow-1">Which license do I need?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-2" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-3" aria-expanded="false">
+              <svg><use xlink:href="#unlock"/></svg>
+              <strong class="flex-grow-1">How do I get access to my database?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-3" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-4" aria-expanded="false">
+              <svg><use xlink:href="#unlock"/></svg>
+              <strong class="flex-grow-1">How do I get access to my database?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-4" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-5" aria-expanded="false">
+              <svg><use xlink:href="#folder"/></svg>
+              <strong class="flex-grow-1">How do I see previous orders?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-5" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6">
+          <div class="card">
+            <div class="faq-question collapsed card-header border-0 d-flex align-items-center gap-4" data-toggle="collapse" data-target="#faq-6" aria-expanded="false">
+              <svg><use xlink:href="#folder"/></svg>
+              <strong class="flex-grow-1">How do I see previous orders?</strong>
+              <svg class="faq-plus text-muted text-sm"><use xlink:href="#add"/></svg>
+              <svg class="faq-minus text-sm"><use xlink:href="#minus"/></svg>
+            </div>
+            <div id="faq-6" class="collapse">
+              <div class="card-body pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, impedit?</div>
+            </div>
+          </div>
+        </li>
       </ul>
 
       <h4>I want to start a project.</h4>
-      <div class="btn-toolbar justify-content-center mt-5">
+      <div class="btn-toolbar justify-content-center mt-5 gap-3">
+        <!--
+          I reversed the order of these two buttons compared to that of the mock-up in order
+          to be more consistent accross the whole page. The purchase button is on the right, like further in the page
+         -->
         <a href="#" class="btn btn-lg btn-white">
           <svg><use xlink:href="#book"/></svg>
           Learn more
@@ -349,11 +499,101 @@
       </div>
     </section>
 
-    <footer class="bg-dark pt-10 section-skewed-top">
+    <footer class="bg-dark text-white-50 pt-10 section-skewed-top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="text-white">
+            <h3>Brilliant solutions for your ideas</h3>
+            <p class="lead mt-0">Modern-looking websites.</p>
+          </div>
+          <div class="btn-toolbar justify-content-center gap-3">
+            <a href="#" class="btn btn-lg btn-white">
+              <svg><use xlink:href="#book"/></svg>
+              Documentation
+            </a>
+            <a href="#" class="btn btn-lg btn-primary">
+              Purchase now
+              <svg><use xlink:href="#arrow-right"/></svg>
+            </a>
+          </div>
+        </div>
 
+        <hr class="my-6">
+
+        <div class="row text-sm">
+          <div class="col-sm-4 mr-auto">
+            <a href="/">
+              <img src="./resources/img/odoo-white.svg" width="92" height="" alt="Odoo" class="align-top">
+            </a>
+
+            <p class="mt-5 mb-0">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="text-white mb-4">Account</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Profile</a></li>
+              <li class="mt-2"><a href="#">Settings</a></li>
+              <li class="mt-2"><a href="#">Billing</a></li>
+              <li class="mt-2"><a href="#">Notifications</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="text-white mb-4">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Services</a></li>
+              <li class="mt-2"><a href="#">Pricing</a></li>
+              <li class="mt-2"><a href="#">Contact</a></li>
+              <li class="mt-2"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="text-white mb-4">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Community</a></li>
+              <li class="mt-2"><a href="#">Help center</a></li>
+              <li class="mt-2"><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="list-unstyled d-flex gap-6 mt-5">
+          <li>
+            <a href="#">
+              <svg><use xlink:href="#dribble"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg><use xlink:href="#github"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg><use xlink:href="#instagram"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg><use xlink:href="#facebook"/></svg>
+            </a>
+          </li>
+        </ul>
+
+        <hr class="my-5">
+
+        <div class="d-flex">
+          <p class="m-0">© <a href="#" class="text-white">Odoo</a>. All rights reserved</p>
+
+          <ul class="nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./resources/js/main.js"></script>
 
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" hidden>
       <defs>
@@ -365,6 +605,10 @@
 
         <symbol id="add" viewBox="0 0 24 24">
           <line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>
+        </symbol>
+
+        <symbol id="minus" viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
         </symbol>
 
         <symbol id="chevron-right" viewBox="0 0 24 24">
@@ -401,6 +645,34 @@
 
         <symbol id="book" viewBox="0 0 24 24">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </symbol>
+
+        <symbol id="file" viewBox="0 0 24 24">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+        </symbol>
+
+        <symbol id="unlock" viewBox="0 0 24 24">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+        </symbol>
+
+        <symbol id="folder" viewBox="0 0 24 24">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+        </symbol>
+
+        <symbol id="dribble" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
+        </symbol>
+
+        <symbol id="github" viewBox="0 0 24 24">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 24 24">
+          <path class="svg-fill" d="M12,0.1c-6.6,0-12,5.4-12,12c0,6,4.4,10.9,10.1,11.8v-8.4h-3v-3.5h3V9.4c0-3,1.8-4.7,4.5-4.7 C16,4.8,17.3,5,17.3,5v3h-1.5c-1.5,0-2,0.9-2,1.9v2.3h3.3l-0.5,3.5h-2.8v8.4C19.6,23,24,18.1,24,12.1C24,5.5,18.6,0.1,12,0.1z"/>
         </symbol>
       </defs>
     </svg>
