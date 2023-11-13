@@ -1,3 +1,55 @@
+/**
+ * General
+ */
+a {
+  text-underline-offset: 0.5rem;
+  transition: color $animation-props;
+}
+
+hr {
+  @include gradient-x-three-colors(transparent, rgba($gray-600, 0.25), 50%, transparent);
+  border: none;
+  height: 1px;
+}
+
+img {
+  height: auto;
+}
+
+svg {
+  width: 1.125em;
+  height: 1.125em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  .svg-fill {
+    fill: currentColor;
+    stroke-width: 0;
+  }
+}
+
+/**
+ * HEADER
+ */
+#header_menu {
+  border-bottom: 1px solid lighten($blue, 15%);
+}
+
+#credit-card {
+  background: url('../img/creditcard-bg.svg') no-repeat center center;
+  background-size: cover;
+}
+
+#credit-card small {
+  font-size: 0.75em;
+}
+
+/**
+ * Sections
+ */
 .section-skewed,
 .section-skewed-top {
   position: relative;
@@ -47,19 +99,15 @@ main section {
   }
 }
 
-#header_menu {
-  border-bottom: 1px solid lighten($blue, 15%);
+.awesome-project__card-img {
+  top: -4.5rem;
+  right: -7.5rem;
+  left: 14.5325rem;
 }
 
-#credit-card {
-  background: url('../img/creditcard-bg.svg') no-repeat center center;
-  background-size: cover;
-}
-
-#credit-card small {
-  font-size: 0.75em;
-}
-
+/**
+ * Components
+ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -71,30 +119,6 @@ main section {
   border-color: $gray-200;
 }
 
-a {
-  text-underline-offset: 0.5rem;
-  transition: color $animation-props;
-}
-
-img {
-  height: auto;
-}
-
-svg {
-  width: 1.125em;
-  height: 1.125em;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-
-  .svg-fill {
-    fill: currentColor;
-    stroke-width: 0;
-  }
-}
-
 .card {
   transition: box-shadow $animation-props;
   box-shadow: $box-shadow;
@@ -102,12 +126,6 @@ svg {
 
 .card-hover:hover {
   box-shadow: $box-shadow-lg;
-}
-
-.awesome-project__card-img {
-  top: -4.5rem;
-  right: -7.5rem;
-  left: 14.5325rem;
 }
 
 .btn-store {
@@ -121,16 +139,39 @@ svg {
   }
 }
 
-.icon-check {
-  padding: 0.125rem;
+/**
+ * Awards
+ */
+#awards .card {
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6rem;
+    background: rgba(#fff, 0.75);
+    width: 150%;
+    transform: translate3d(0, 100%, 0) rotate(30deg);
+    transform-origin: top left;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 0.5;
+      transform: translate3d(0, -450%, 0) rotate(30deg);
+      transition: .7s ease-out;
+      transition-property: transform, opacity;
+    }
+  }
 }
 
-hr {
-  @include gradient-x-three-colors(transparent, rgba($gray-600, 0.25), 50%, transparent);
-  border: none;
-  height: 1px;
-}
-
+/**
+ * FAQ
+ */
 [data-toggle="collapse"] {
   cursor: pointer;
 }
@@ -151,6 +192,9 @@ hr {
   display: none;
 }
 
+/**
+ * FOOTER
+ */
 footer a {
   text-decoration: none;
   color: inherit;
@@ -158,32 +202,5 @@ footer a {
   &:hover {
     color: white;
     text-decoration: underline;
-  }
-}
-
-#awards .card {
-  overflow: hidden;
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 6rem;
-    background: rgba(#fff, 0.75);
-    width: 150%;
-    transform: translate3d(0, 100%, 0) rotate(30deg);
-    transform-origin: top left;
-    pointer-events: none;
-    opacity: 1;
-  }
-}
-
-#awards .card:hover {
-  &:after {
-    opacity: 0.5;
-    transform: translate3d(0, -450%, 0) rotate(30deg);
-    transition: .7s ease-out;
-    transition-property: transform, opacity;
   }
 }

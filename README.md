@@ -11,6 +11,7 @@ Here are the steps to follow in order to display the page on your environment :
 3. Open a terminal and type 'npm run preview'. This will launch a private server and use the optimized assets.
 
 I also took a few notes that could be useful to you when reviewing the exercise :
+- I removed the /dist folder from the .gitignore for you to already have the built version right off the bat. I am aware that it is not a good practice.
 - I couldn't find the precise font you used in the mock-up, but this one is pretty close.
 - I reversed the order of the two buttons in the FAQ section compared to that of the mock-up in order to be more consistent accross the whole page. The purchase button is on the right, as it is in the footer.
 - For the awards section, I would imagine creating a slider to display the overflowing cards (like the paypal one) on smaller resolutions.
