@@ -169,6 +169,12 @@ main section {
   }
 }
 
+@media screen and (min-width: 1720px) {
+  #awards_row {
+    flex-wrap: nowrap;
+  }
+}
+
 /**
  * FAQ
  */
