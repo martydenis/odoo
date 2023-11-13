@@ -5,9 +5,10 @@ I used the bundler Vite to quickly compile all the assets and the HTML in the /d
 
 My design exercise is available at this address: https://martindenis.be/projects/odoo/
 
-Here are the steps to follow in order to display the page :
-1. Clone the project from my Github. The project should already be built and ready to preview.
-2. Open a terminal and type 'npm run preview'. This will launch a private server and use the optimized assets. You need to have node JS previously installed.
+Here are the steps to follow in order to display the page on your environment :
+1. Have node JS previously installed.
+2. Clone the project from my Github. The project should already be built and ready to preview.
+3. Open a terminal and type 'npm run preview'. This will launch a private server and use the optimized assets.
 
 I also took a few notes that could be useful to you when reviewing the exercise :
 - I couldn't find the precise font you used in the mock-up, but this one is pretty close.
