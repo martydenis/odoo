@@ -171,7 +171,7 @@ footer a {
     bottom: 0;
     height: 6rem;
     background: rgba(#fff, 0.75);
-    width: 120%;
+    width: 150%;
     transform: translate3d(0, 100%, 0) rotate(30deg);
     transform-origin: top left;
     pointer-events: none;
@@ -180,8 +180,6 @@ footer a {
 }
 
 #awards .card:hover {
-  // border-color: $gray-200;
-
   &:after {
     opacity: 0.5;
     transform: translate3d(0, -450%, 0) rotate(30deg);
